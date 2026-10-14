@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TryAllAPI — OpenAI-compatible multi-model API</title>
+  <meta name="description" content="TryAllAPI: OpenAI-compatible base URL https://tryallapi.com/v1, 300+ models. Third-party aggregator — not official OpenAI/Anthropic/Google." />
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, sans-serif; line-height: 1.5; }
+    body { max-width: 40rem; margin: 2rem auto; padding: 0 1.25rem; }
+    code, pre { font-family: ui-monospace, monospace; font-size: 0.9em; }
+    pre { overflow: auto; padding: 0.75rem 1rem; border-radius: 8px; background: #f4f4f5; }
+    @media (prefers-color-scheme: dark) { pre { background: #27272a; } }
+    a { color: #2563eb; }
+    .warn { border-left: 4px solid #f59e0b; padding: 0.5rem 0.75rem; margin: 1rem 0; }
+    ul { padding-left: 1.2rem; }
+  </style>
+</head>
+<body>
+  <h1>TryAllAPI</h1>
+  <p>OpenAI-compatible multi-model API gateway — one base URL, 300+ models.</p>
+  <ul>
+    <li><strong>Website:</strong> <a href="https://tryallapi.com/">tryallapi.com</a></li>
+    <li><strong>Base URL:</strong> <code>https://tryallapi.com/v1</code></li>
+    <li><strong>Pricing:</strong> <a href="https://tryallapi.com/pricing">tryallapi.com/pricing</a></li>
+    <li><strong>Docs:</strong> <a href="https://docs.tryallapi.com/">docs.tryallapi.com</a></li>
+    <li><strong>Contact:</strong> bgnwd15@gmail.com</li>
+    <li><strong>GitHub README:</strong> <a href="https://github.com/xianyu110/tryallapi">xianyu110/tryallapi</a></li>
+  </ul>
+  <div class="warn">
+    <strong>Disclaimer:</strong> Third-party aggregator — <em>not</em> affiliated with OpenAI, Anthropic, or Google.
+    Never commit API keys. Prices and model list change; trust the live console.
+  </div>
+  <h2>Quick start</h2>
+  <pre>from openai import OpenAI
+client = OpenAI(
+    api_key="YOUR_API_KEY",
+    base_url="https://tryallapi.com/v1",
+)</pre>
+</body>
+</html>
